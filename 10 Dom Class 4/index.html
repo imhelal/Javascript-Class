@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      onkeydown="hideError()"
+      type="text"
+      id="name"
+      placeholder="Your Name"
+    />
+    <br /><br />
+    <input
+      onkeydown="hideError()"
+      type="text"
+      id="phone"
+      placeholder="Phone"
+    /><br /><br />
+    <input
+      onkeydown="hideError()"
+      type="email"
+      id="email"
+      placeholder="Email address"
+    /><br /><br />
+    <input
+      onkeydown="hideError()"
+      type="text"
+      id="password"
+      placeholder="Password"
+    /><br />
+    <p id="error" style="color: red"></p>
+    <button id="submit-btn">Register</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
