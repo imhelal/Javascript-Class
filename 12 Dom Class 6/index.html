@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Class 5</title>
+
+    <style>
+      .page-title {
+        text-align: center;
+        font-size: 60px;
+      }
+      .post-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      .post-item {
+        box-shadow: 0px 0px 3px 2px rgb(234, 234, 234);
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      @media (width < 740px) {
+        .post-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="page-title">New Posts</h1>
+    <div class="post-grid"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- 
+<div class="post-item">
+    <h1>Post Title</h1>
+    <h4>Author</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id neque
+      voluptatibus architecto voluptates possimus dolores sint aliquid quod
+      vero quas molestiae provident, doloremque, eum dignissimos enim
+      eveniet necessitatibus delectus similique!
+    </p>
+  </div> -->
